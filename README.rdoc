@@ -36,9 +36,8 @@ This plugin provides the following Knife subcommands.  Specific command options 
 
 The goal  The main assumption is to bypass chef server and client install  and  just install a recipe 
 
-=== Knife  install 
+=== Knife  install [ENTRY[,ENTRY]]  (options)
 
-Generates instance metadata in meant to be used with Opscode's custom AMIs. This will read your knife configuration <tt>~/.chef/knife.rb</tt> for the validation certificate and Chef server URL to use and output in JSON format. The subcommand also accepts a list of roles/recipes that will be in the node's initial run list.
 
 
 knife node run_list add NODE 'role[chef-client],recipe[getting-started],recipe[chef-client::service]' type syntax
